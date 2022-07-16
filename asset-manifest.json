@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/gamezinfo/static/css/main.3fd2f57e.css",
+    "main.js": "/gamezinfo/static/js/main.c8ac654b.js",
+    "index.html": "/gamezinfo/index.html",
+    "main.3fd2f57e.css.map": "/gamezinfo/static/css/main.3fd2f57e.css.map",
+    "main.c8ac654b.js.map": "/gamezinfo/static/js/main.c8ac654b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3fd2f57e.css",
+    "static/js/main.c8ac654b.js"
+  ]
+}
