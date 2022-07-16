@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html, body {
+  font-family: 'Odibee Sans', 'Concert One', cursive, sans-serif!important; 
+  margin: 0;
+  padding: 0;
+}
+
+button {
+    border-radius: 5px;
+    border: none;
+    outline: none!important;
+    transition: all 0.2s ease-in;
+}
+
+button:active {
+    transform: scale(0.5);
+}
+
+.container {
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    height: 55vh;
+    width: 100vw;
+    background-color: #fff5f6;
+}
+
+.header .branding {
+    width: max-content;
+    height: max-content;
+}
+
+.header .branding .brand-name {
+    font-size: 18rem;
+    line-height: 1.1;
+    letter-spacing: 0.2rem;
+    color: #000;
+    color: transparent;
+    -webkit-text-stroke: 2px #790000;
+    -webkit-text-fill-color: transparent;
+}
+
+.header .branding .brand-name .info, .dot {
+    color: #1c1517!important;
+    -webkit-text-stroke: #1c1517;
+    -webkit-text-fill-color: #1c1517;
+}
+
+.header .search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+}
+
+.header .search-container .searchbar {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px 0 0;
+}
+
+.header .search-container .searchbar input {
+    width: 48rem;
+    height: 3rem;
+    padding-left: 10px;
+    font-family: 'Sora', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 7px 13px -3px rgba(231, 28, 35, 0.105);
+}
+
+.header .search-container .searchbar input:focus {
+    border: 1px solid #E71C24!important;
+}
+
+.header .search-container .searchbar input::placeholder {
+    font-weight: 200;
+}
+
+.header .search-container .searchbar .suggestion {
+    position: absolute;
+    margin-top: 55px;
+    margin-right: 10px;
+    max-height: 25vh;
+    width: 48rem;
+    border-radius: 5px;
+    overflow-y: scroll;
+    background-color: rgba(255, 132, 132, 0.944);
+}
+
+.header .search-container .searchbar .suggestion .suggestions-name {
+    padding: 8px 8px 8px 10px;
+    font-family: 'Sora', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.04rem;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.header .search-container .searchbar .suggestion .suggestions-name:hover {
+    background-color: rgb(255, 104, 104);
+}
+
+.header .search-btn-container {
+    width: max-content;
+    height: max-content;
+}
+
+.header .search-btn-container button {
+    height: 3rem;
+    width: 12rem;
+    color: #fff;
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
+    background-color: #E71C24;
+    box-shadow: 0px 7px 13px -3px rgba(231, 28, 36, 0.24);
+    /* box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.122); */
+}
+
+.container .category {
+    width: 100vw;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .category .platforms {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 75vw;
+}
+
+.container .category .platforms .by-platform p {
+    font-size: 1.5rem;
+}
+
+.container .category .platforms .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.container .category .platforms .menuName {
+    width: max-content;
+    height: max-content;
+}
+
+.container .category .platforms .menuName button {
+    margin: 8px 15px 8px 0;
+    padding-top: 8px;
+    padding-bottom: 4px;
+    font-size: 1.2rem;
+    letter-spacing: 0.04rem;
+    width: 125px;
+    /* height: 36px; */
+}
+
+.container .category .platforms .menuName button:hover {
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.176);
+}
+
+.container .category .games-sort {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: center; */
+    margin-top: 20px;
+    width: 75vw;
+}
+
+.container .category .games-sort p {
+    /* font-family: 'Sora', sans-serif; */
+    font-size: 1.5rem;
+    font-weight: 300;
+    /* letter-spacing: -0.03rem; */
+    color: #000;
+    /* margin: 0; */
+}
+
+.container .category .games-sort .sort-a-d {
+    display: flex;
+}
+
+.container .category .games-sort .sort-a-d .menuName {
+    margin: 0 10px 5px 0;
+}
+
+.container .category .games-sort .sort-a-d .menuName button {
+    padding-top: 8px;
+    padding-bottom: 4px;
+    font-size: 1.2rem;
+    letter-spacing: 0.04rem;
+    width: 125px;
+}
+
+.container .category .games-sort .sort-a-d .menuName button:hover {
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.176);
+}
+
+.container .games-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1% 4%;
+    width: 100vw;
+}
+
+.container .games-list .cards {
+    margin: 10px;
+    padding: 1.6% 2%;
+    /* padding-left: 1.2%; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 16rem;
+    height: 15rem;
+    border-radius: 5px;
+    transition: all 0.15s ease-in;
+    background-color: rgb(245, 245, 245);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.container .games-list .cards:hover {
+    transform: scale(0.9);
+}
+
+.container .games-list .cards p {
+    font-family: 'Sora', sans-serif;
+    color: #000;
+    margin: 0;
+}
+
+.container .games-list .cards p span {
+    font-weight: 700;
+    letter-spacing: 0.08rem;
+}
+
+@media screen and (max-width: 1100px) {
+    .header .branding .brand-name {
+        font-size: 14rem;
+        line-height: 1.1;
+    }
+
+    .header .search-container .searchbar input {
+        width: 35rem;
+        height: 3rem;
+    }
+    
+    .header .search-container .searchbar .suggestion {
+        width: 35rem;
+    }
+
+    .header .search-btn-container button {
+        height: 3rem;
+        width: 8rem;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .header .branding .brand-name {
+        font-size: 12rem;
+        line-height: 1.1;
+    }
+
+    .header .search-container .searchbar input {
+        width: 25rem;
+        height: 3rem;
+    }
+    
+    .header .search-container .searchbar .suggestion {
+        width: 25rem;
+    }
+
+    .header .search-btn-container button {
+        height: 3rem;
+        width: 5rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .header {
+        height: max-content;
+        padding-top: 6%;
+        padding-bottom: 6%;
+        padding-left: 3%;
+        align-items: flex-start;
+    }
+    .header .branding .brand-name {
+        font-size: 8rem;
+        line-height: 1.1;
+    }
+
+    .header .search-container .searchbar input {
+        margin-left: 7px;
+        width: 15rem;
+        height: 2.9rem;
+    }
+    
+    .header .search-container .searchbar .suggestion {
+        margin-left: 7px;
+        width: 15rem;
+    }
+
+    .header .search-btn-container button {
+        height: 2.9rem;
+        width: 4rem;
+    }
+
+    .container .category {
+        padding-left: 3%;
+        align-items: flex-start;
+    }
+
+    .container .category .platforms {
+        justify-content: flex-start;
+    }
+    
+    .container .category .platforms .menuName button {
+        margin: 8px 15px 8px 0;
+        padding-top: 8px;
+        padding-bottom: 4px;
+        font-size: 1.1rem;
+        width: 110px;
+    }
+    
+    .container .category .games-sort p {
+        font-size: 1.25rem;
+        margin-left: 4px;
+    }
+    
+    .container .category .games-sort .sort-a-d {
+        display: flex;
+    }
+    
+    .container .category .games-sort .sort-a-d .menuName {
+        margin: 0 10px 5px 4px;
+    }
+    
+    .container .category .games-sort .sort-a-d .menuName button {
+        padding-top: 8px;
+        padding-bottom: 4px;
+        font-size: 1.1rem;
+        width: 110px;
+    }
+    
+    .container .games-list {
+        justify-content: flex-start;
+        padding: 1% 3%;
+    }
+    
+    .container .games-list .cards {
+        margin: 10px 10px 10px 4px;
+        padding: 1.6% 2%;
+        width: 15rem;
+        height: 12rem;
+        font-size: 0.9rem;
+        background-color: rgb(245, 245, 245);
+    }
+    
+}
+
+@media screen and (max-width: 553px) {
+    .header {
+        height: max-content;
+        padding-top: 6%;
+        padding-bottom: 6%;
+        padding-left: 4%;
+        align-items: flex-start;
+    }
+    .header .branding .brand-name {
+        font-size: 4rem;
+        line-height: 1.1;
+    }
+
+    .header .search-container .searchbar input {
+        margin-left: 4px;
+        width: 12rem;
+        height: 2.6rem;
+    }
+    
+    .header .search-container .searchbar .suggestion {
+        margin-left: 4px;
+        margin-top: 45px;
+        width: 12rem;
+    }
+
+    .header .search-btn-container button {
+        height: 2.6rem;
+        width: 3rem;
+    }
+    
+    .container .category .platforms .menuName button {
+        margin: 5px;
+        padding: 8px;
+        font-size: 1rem;
+        width: max-content;
+    }
+    
+    .container .category .games-sort p {
+        font-size: 1.25rem;
+        margin-left: 4px;
+    }
+    
+    .container .category .games-sort .sort-a-d {
+        display: flex;
+    }
+    
+    .container .category .games-sort .sort-a-d .menuName {
+        margin: 0 10px 5px 4px;
+    }
+    
+    .container .category .games-sort .sort-a-d .menuName button {
+        padding: 2px;
+        font-size: 1.1rem;
+        width: 110px;
+    }
+    
+    .container .games-list {
+        justify-content: flex-start;
+        padding: 1% 3%;
+    }
+    
+    .container .games-list .cards {
+        margin: 10px 10px 10px 4px;
+        padding: 1.6% 2%;
+        width: 13rem;
+        height: 10rem;
+        font-size: 0.7rem;
+        /* background-color: rgb(181, 181, 181); */
+    }
+    
+}
+
+@media screen and (max-width: 425px) {
+    .container .games-list {
+        justify-content: flex-start;
+        padding: 1% 3%;
+    }
+    
+    .container .games-list .cards {
+        margin: 10px 10px 10px 4px;
+        padding: 4%;
+        width: 100vw;
+        height: max-content;
+        font-size: 0.8rem;
+        background-color: rgb(245, 245, 245);
+    }
+}
+
+
+
+
