@@ -195,9 +195,9 @@ let Home = () => {
             <div className="games-list">
                 {console.log(games)}
                 {games && games.map((data, index) => {
-                    {console.log('inside')}
-                    {console.log(games)}
-                    if(games.length === 100) setGames(games.splice(0 , 1));
+                    // {console.log('inside')}
+                    // {console.log(games)}
+                    // if(games.length === 100) setGames(games.splice(0 , 1));
                     return (
                         <div className={'card' + index + ' ' + 'cards'} id={index + 'c'} key={index}>
                             <div className="title">
