@@ -193,9 +193,8 @@ let Home = () => {
                 </div>
             </div>
             <div className="games-list">
-                {console.log(games)}
                 {games && games.map((data, index) => {
-                    if(games.length === 100) return setGames(games.splice(0 , 1));
+                    if(data.api_rate_limit !== undefined) if(data.api_rate_limit === 50000) return;
                     return (
                         <div className={'card' + index + ' ' + 'cards'} id={index + 'c'} key={index}>
                             <div className="title">
